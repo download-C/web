@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상품 소개 페이지</title>
+  <style>
+    .desc {
+      border:5px dotted #222;
+      background-color:#ffd9a0;
+      width:250px;
+      padding:20px;
+      margin-right:10px;
+      float:left;
+    }
+    #clip-border {
+      background-clip: border-box;
+    }
+    #clip-padding {
+      background-clip: padding-box;
+    }
+    #clip-content {
+      background-clip: content-box;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="desc" id="clip-border">
+      <h3>border-box</h3>
+      <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.</p>
+    </div>
+    <div class="desc" id="clip-padding">
+      <h3>padding-box</h3>
+      <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.</p>
+    </div>
+    <div class="desc" id="clip-content">
+      <h3>contetn-box</h3>
+      <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.</p>
+    </div>        
+  </div>
+</body>
+</html>

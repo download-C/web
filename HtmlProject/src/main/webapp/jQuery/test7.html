@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // 애니메이션
+      // 1. show(), hide(), toggle() : 나타났다 사라짐
+        $('#h1').click(function(){
+          // alert("click");
+          // 클릭한 객체의 다음에 오는 <div> 태그가 보였다 안 보였다
+            // $(this).next().toggle();
+          // 토글 속도 천천히
+            // $(this).next().toggle('slow'); 
+          // 토글 후 다른 알림창 띄우기
+          $(this).next().toggle('slow', function(){
+            alert('효과 끝');
+          });          
+        });
+      // 2. slideDown(), slideUp(), slideToggle() : 내려갔다 올라옴
+        // $('h3').click(function(){
+        //   $(this).next().slideToggle();
+        // });
+      // 3. fadeIn(), fadeOut(), fadeToggle() : 서서히 나타났다 사라짐
+      $('#h2').click(function(){
+          $(this).next().fadeToggle();
+        });
+
+      // 4. animate() : 특정 객체의 크기 바꾸기
+      $('#anitab').css('background-color', 'orange');
+      $('#anitab').click(function(){
+        // alert("click");
+        // alert($(this).css('width'));
+        // alert($(this).css('height'));
+
+        var wid=$(this).css('width');
+        var hei=$(this).css('height');
+
+        // 너비와 높이 바꾸기
+        $(this).animate({
+          // parseInt() : 문자열을 int형으로 변환
+          width: parseInt(wid)+50,
+          height: parseInt(hei)+50
+        })
+      });
+    }); 
+  </script>
+</head>
+<body>
+  <h1>test7.html</h1>
+  <table id="anitab" border="1" width="50" height="50"></table>
+
+  <h1 id="h1"> 열고 닫기1</h1>
+  <div>
+    <h3>제목</h3>
+    <p>내용</p>
+  </div>
+
+  <h1 id="h2"> 열고 닫기2</h1>
+  <div>
+    <h3>제목</h3>
+    <p>내용</p>
+  </div>
+
+  <!-- <h3> 열고 닫기3</h3>
+  <div>
+    <h6>제목</h6>
+    <p>내용</p>
+  </div>
+
+  <h3> 열고 닫기4</h3>
+  <div>
+    <h6>제목</h6>
+    <p>내용</p>
+  </div>
+
+  <h3> 열고 닫기5</h3>
+  <div>
+    <h6>제목</h6>
+    <p>내용</p>
+  </div>
+
+  <h3> 열고 닫기6</h3>
+  <div>
+    <h6>제목</h6>
+    <p>내용</p>
+  </div>
+
+  <h3> 열고 닫기7</h3>
+  <div>
+    <h6>제목</h6>
+    <p>내용</p>
+  </div>
+
+  <h3> 열고 닫기8</h3>
+  <div>
+    <h6>제목</h6>
+    <p>내용</p>
+  </div>
+
+  <h3> 열고 닫기9</h3>
+  <div>
+    <h6>제목</h6>
+    <p>내용</p>
+  </div> -->
+</body>
+</html>

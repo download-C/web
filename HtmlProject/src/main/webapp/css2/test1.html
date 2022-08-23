@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css2/test1.html</title>
+<style type="text/css">
+	/* 하위 선택자 ( ) : 상위 영역의 모든 하위요소, 손자요소 선택 */
+	section p {
+		color: blue;
+	}
+	
+	/* 자식 선택자 (>) : 상위 요소 바로 안의 하위요소만 선택 */
+	section > h1 {
+		background: black;
+		color: white;
+	}
+	
+	/* 인접 형제 선택자 (+) : 요소1 바로 다음에 나오는 요소2 선택 */
+	h1 + p {
+		color: red;
+	} 
+	
+	/* 형제 선택자 (~) : 요소1과 같은 영역에 있는 모든 요소2 선택*/
+	h1 ~ p {
+		font-size: 30px;
+	}
+</style>
+</head>
+<body>
+	<section>
+		<h1>예약 방법과 사용 요금</h1>
+		<p> 온라인 예약 신청이...</p>
+		<p> 계좌 입금...</p>
+		<div>
+			<p>가족실</p>
+			<p>도미토리</p>
+		</div>
+	</section>
+</body>
+</html>

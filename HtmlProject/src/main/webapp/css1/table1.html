@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css1/table1</title>
+<style>
+	* {
+	   font-size: 100px;
+	}
+	
+	table{
+		caption-side: bottom;
+		border: 1px solid black;
+	}
+	
+	tr, td{
+		border: 1px dotted;
+		padding: 10px;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+
+	<div>
+		나랏말싸미 듕귁에 달아<br>
+		문짱와로 서로 사맏디 아니할셰<br>
+		이런 전챠로
+	</div>
+	<h2>상품 구성</h2>
+	<table>
+		<caption> 선물과 가정용 상품 구성</caption>
+	
+		<thead>
+			<tr>
+				<td>용도</td>
+				<td>중량</td>
+				<td>개수</td>
+				<td>가격</td>
+			</tr>		
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="2">선물용</td>
+				<td>3kg</td>
+				<td>11~16과</td>
+				<td>35,000원</td>
+			</tr>	
+			<tr>
+				
+				<td>5kg</td>
+				<td>18~26과</td>
+				<td>52,000원</td>
+			</tr>	
+			<tr>
+				<td rowspan="2">가정용</td>
+				<td>3kg</td>
+				<td>11~16과</td>
+				<td>30,000원</td>
+			</tr>	
+			<tr>
+				
+				<td>5kg</td>
+				<td>18~26과</td>
+				<td>47,000원</td>
+			</tr>	
+		</tbody>
+	
+	</table>
+</body>
+</html>

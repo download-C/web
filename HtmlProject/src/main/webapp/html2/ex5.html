@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html2/ex5.html</title>
+
+</head>
+<body>
+
+<!-- 05-4. 폼에서 사용하는 태그들 -->
+
+<textarea rows="10" cols="20" name="tx">값</textarea> <br>
+
+<select name="sel" size="3" multiple>
+	<option value="값1"> 내용1 </option>
+	<option value="값2"> 내용2 </option>
+	<option value="값3" selected> 내용3 </option>
+</select>
+
+
+
+
+<!-- 138쪽 회원가입 사이트에 추가하기-->
+<!-- 160쪽 가입경로 select -->
+<!-- 160쪽 메모 textarea -->
+<form>
+	<h1>회원 가입을 환영합니다</h1>
+		<fieldset>
+			<legend>사용자 정보</legend>
+			<ul id="sign-up">
+				<li>
+					<label for="">아이디</label>
+					<input type="text" name="sign-up" id="id"  placeholder="4자~10자 사이, 공백없이">
+				</li>
+				<li>
+					<label for="email">이메일</label>	
+					<input type="email" name="sign-up" id="emial" required>
+				</li>
+				<li>
+					<label for="pass">비밀번호</label>
+					<input type="password" name="sign-up" id="pass"  placeholder="문자와 숫자, 특수 기호 포함">
+				</li>
+				<li>
+					<label for="paas-hidden">비밀번호 확인</label>
+					<input type="hidden" name="sign-up" id="hidden">
+				</li>
+				<li>
+					<label for="join route">가입 경로</label>
+					<select name="route" size="1" >
+						<option value="blog"> 블로그 </option>
+						<option value="search"> 검색 </option>
+						<option value="sns"> SNS </option>
+						<option value="etc"> 기타 </option>
+					</select> 
+				</li>
+				<li>
+					<label for="memo">메모</label>
+					<textarea cols="40" rows="4" placeholder="남길 말씀이 있다면 여기에"></textarea>
+				</li>
+			</ul>
+		</fieldset>	
+		<fieldset>
+			<legend>이벤트와 새로운 소식</legend>
+			<input type="radio" id="mailing-y" checked>
+			<label for="mailing-y">메일 수신</label>
+			<input type="radio" id="mailing-n">
+			<label for="mailing-n">메일 수신 안 함</label>
+		</fieldset>
+		<div>
+			<input type="submit" value="가입하기">
+			<input type="reset" value="취소"> <br>
+		</div>
+</form>		<hr>
+
+<!--                          163쪽 마무리 문제                                     -->
+
+<!-- 문제 1 -->
+<form action="a.jpg" method="get">
+	<fieldset >
+		<h1>예약 정보</h1>
+				<label for="name">이 름</label> 
+				<input type="text" id="name"> <br>
+				<br>
+				<label for="phone">전 화</label>
+				<input type="tel" id="phone"> <br>
+				<br> 
+				<label for="email">이메일</label>
+				<input type="email" id ="email"> <br>
+				<br> 	
+				<input type="submit" value="예약하기">
+	</fieldset>
+</form>
+
+<hr>
+
+<!-- 문제 2 -->
+
+<form>
+	<h1> 프런트엔드 개발자 지원서 </h1>
+	HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.
+	<hr>
+	<fieldset style="border-color: transparent;"> 
+		<legend><b>개인 정보</b></legend>
+			<ul style="list-style-type: none; ">
+				<li>
+					<label for="name" >이름</label>
+					<input type="text" id="name" placeholder="공백 없이 입력하세요"> <br>
+				</li>
+				<li>	
+					<label for="phone">연락처</label>
+					<input type="tel" id="tel"> <br>
+				</li>	
+			</ul>	
+	</fieldset>	
+	<fieldset style="border-color: transparent;">
+		<legend><b>지원 분야</b></legend> 
+			<ul style="list-style-type: none; ">
+				<li>
+					<input type="radio" id="web_publ"> 
+					<label for="web_publ">웹 퍼블리싱</label>
+				</li>
+				<li>
+					<input type="radio" id="web_app"> 
+					<label for="web_app">웹 어플리케이션 개발</label>
+				</li>
+				<li>	
+					<input type="radio" id="dev_env"> 
+					<label for="dev_env">개발 환경 개선</label>
+				</li>	
+			</ul>
+	</fieldset>	
+	<fieldset style="border-color: transparent;">
+		<legend><b>지원 동기</b></legend>
+			<textarea cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요"></textarea> <br>
+			<input type="submit" value="접수하기">
+			<input type="reset" value="다시 쓰기">
+	</fieldset>
+</form>
+
+</body>
+</html>

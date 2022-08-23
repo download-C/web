@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.container { 
+	padding: 0px;
+	margin: center;
+}
+.navi {
+	width: 960px;
+	height: 60px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ccc;
+}
+.navi ul {
+	list-style-type: none;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.navi ul li {
+	float: left;
+	width: 150px;
+	padding: 10px;
+}
+.navi a:link, .navi a:visited {
+	display: block;
+	font-size: 14px;
+	color: black;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+}
+.navi a:hover, .navi a:focus {
+	background-color: #222;
+	color: white;
+}
+.navi a:active {
+	background-color: red;
+}
+#intro {
+	width: 500px;
+	height: 300px;
+	border-radius: 5px;
+}
+#intro :target {
+	background-color: blue;
+	color: #fff
+}
+#room :target {
+
+}
+#reservation :target {
+
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<nav class="navi">
+		<ul>
+			<li><a href="#intro">이용 안내</a></li>
+			<li><a href="#room">객실 소개</a></li>
+			<li><a href="#reservation">예약 방법 및 요금</a></li>
+			<li><a href="ps-2.html">예약하기</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="intro" class="contents">
+	<h2>이용 안내</h2>
+</div>
+<div id="room" class="contents">
+	<h2>객실 소개</h2>
+</div>
+<div id="reservation" class="contents">
+	<h2>예약 방법 및 요금</h2>
+</div>
+</body>
+</html>

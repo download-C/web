@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css2/test4.html</title>
+<style>
+	#signup input:checked + label {
+		color: red;
+		font-weight: bold;
+	}
+	#signup input:not [type=radio]{
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		padding: 5px;
+		width: 200px;
+	}
+	li {
+		list-style-type: none;
+		float: left;
+		width: 150px;
+	}
+	submit {
+		
+	}
+</style>
+</head>
+<body>
+<form action="a.jsp" method="post" id="signup">
+	<fieldset>
+	<legend>개인 정보</legend>
+		<ul>
+			<li><label>이름</label><input type="text" name="name"></li>
+			<li><label>연락처</label><input type="tel" name="phone"></li>			
+		</ul>
+	</fieldset>
+	<fieldset>
+	<legend>객실 형태</legend>
+		<ul>
+			<li>
+				<input type="radio" name="room" > 
+				<label>기본형(최대 2인)</label>
+			</li>
+			<li>
+				<input type="radio" name="room" >
+				<label>가족형(최대 8인)</label>
+			</li>			
+		</ul>
+	</fieldset>
+	<input type="submit" name="submit" value="제출">
+</form>
+
+</body>
+</html>

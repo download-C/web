@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html2/ex6.html</title>
+<style>
+	#container {
+		margin: 20px auto;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		}
+	#header {
+		width: 100%;
+		height: 120px;	
+		background-color: #fff457;
+		align-items: center;
+		display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+	#left_sidebar {
+		width: 20%;
+		height: 600px;
+		float: left;
+		background-color: pink;
+		top: 50%;
+		display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 60px;
+		
+	}
+	#content {
+		display: flex;
+        justify-content: center;
+        align-items: center;
+		width: 60%;
+		height: 600px;
+		float: left;
+		background-color: skyblue;
+		
+	}
+	#right_sidebar {
+		width: 20%;
+		height: 600px;
+		float: left;
+		background-color: pink;
+		display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 60px;
+		
+	}
+	
+	#footer {
+		width: 100%;
+		height: 100px;
+		background-color: #fff457;
+		clear: left;
+		display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+</style>
+</head>
+<body>
+<div id=container>
+	<div id='header'><h1>헤더</h1></div>
+	
+	<div id='left_sidebar'><h1>왼쪽<br>사이드바</h1></div>
+	
+	<div id='content'><h1>본문</h1></div>
+	
+	<div id='right_sidebar'><h1>오른쪽<br>사이드바</h1></div>
+	
+	<div id='footer'><h1>푸터</h1></div>
+</div>	
+</body>
+</html>

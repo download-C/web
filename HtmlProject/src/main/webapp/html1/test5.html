@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html1/test5.html</title>
+</head>
+<body>
+<h1>폼(양식)태그</h1>
+<!-- submit버튼  : 폼태그 안에 있는 데이터를 서버에 전달 
+폼태그 영역 지정, 
+method="get" 기본방식, 모든 하이퍼링크 데이터 전송방식으로 주소줄에 이름=값으로 전달,
+method="post" 폼태그에서만 선택, 데이터를 숨겨서 데이터 전달 방식,
+action="test1.html" 연결할 페이지 
+-->
+<form action="test1.html" method="post">
+아이디 : <input type="text" name="id" value="kim"><br>
+비밀번호 : <input type="password" name="pass"><br>
+자기소개 : <textarea rows="5" cols="10" name="intro">입력값</textarea><br>
+
+성별 : <input type="radio" name="gender" value="남">남성
+       <input type="radio" name="gender" value="여" checked>여성<br>
+취미 : <input type="checkbox" name="hobby" value="여행">여행 
+	   <input type="checkbox" name="hobby" value="게임" checked>게임
+       <input type="checkbox" name="hobby" value="독서">독서<br>  
+   
+목록상자 : <select name="sel">
+				<option value="1">목록1</option>
+				<option value="2" selected>목록2</option>
+				<option value="3">목록3</option>
+           </select><br>
+           
+파일선택 : <input type="file" name="file"><br>
+히든태그 : <input type="hidden" name="hi" value="히든값"><br>   
+
+<input type="button" value="버튼">      
+<input type="submit" value="회원가입">
+<input type="reset" value="초기화">
+</form>
+</body>
+</html>
+
+
+

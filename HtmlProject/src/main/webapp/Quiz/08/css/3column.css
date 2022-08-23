@@ -1,0 +1,38 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+#container {
+	width: 1200px;
+	margin: 20px;
+	background-color: #e7ceff;
+}
+#header {
+	width: 100%;
+	height: 120px;
+}
+#left-sidebar {
+	width: 250px;
+	height: 600px;
+	float: left;
+	background-color: #ffe6f2;
+}
+#contents {
+	width: 800px;
+	height: 600px;
+	float: left;
+	background-color: #efdfff;
+}
+#right-sidebar {
+	width: 150px;
+	height: 600px;
+	float:left;
+	background-color: #ffe6f2;
+}
+#footer {
+	width: 100%;
+	height: 100px;
+	clear: left;
+}

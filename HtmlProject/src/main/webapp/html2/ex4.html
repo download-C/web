@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html2/ex4.html</title>
+
+</head>
+<body>
+<!-- 133쪽 배송 정보 (그림 5-10) -->
+<form>
+	<fieldset>
+		 <legend>배송 정보</legend>
+		 <ul>
+		 	<li>
+		 		<label for="user-name">이름</label>
+		 		<input type="text" id="user-name" name="login">
+		 	</li>
+		 	<li>
+		 		<label for="address">배송 주소</label>
+		 		<input type="text" id="address" name="login">
+		 	</li>
+		 	<li>
+		 		<label for="e-mail">이메일</label>
+		 		<input type="email" id=e-mail name="login">
+		 	</li>
+		 	<li>
+		 		<label for="phone">연락처</label>
+		 		<input type="tel" id="phone" name="login">
+		 	</li>
+		 </ul>
+	</fieldset>
+</form>
+<br><br><br><br><br><hr>
+<!-- 135쪽 상품 선택 (그림 5-11) -->
+<form>
+	<fieldset>
+		<legend> 상품 선택 </legend>
+		<h4> 주문할 상품을 선택해 주세요. </h4>
+			<label><input type="checkbox" value="s3"> 선물용 3kg </label>
+			<label><input type="checkbox" value="s5"> 선물용 5kg </label>
+			<label><input type="checkbox" value="g3"> 가정용 3kg </label>
+			<label><input type="checkbox" value="g5"> 가정용 5kg </label>
+		<h4> 포장 선택 </h4>
+			<label><input type="radio" name="gift" id="gift-y" value="선물 포장"> 선물 포장 </label>
+			<label><input type="radio" name="gift" id="gift-n" value="선물 포장 안 함">선물 포장 안 함</label>
+	</fieldset>
+</form>
+
+
+
+
+<br><br><br><br><br><hr>
+<!-- 138쪽 회원 가입 (그림 5-13) -->
+<h1> 회원 가입을 환영합니다 </h1>
+<form>
+	<fieldset>
+		<legend> 사용자 정보 </legend>
+		<ul>
+		 	<li>
+		 		<label for="user-name"> 이름 </label>
+		 		<input type="text" id="user-name" name="login">
+		 	</li>
+		 	<li>
+		 		<label for="email"> 이메일 </label>
+		 		<input type="email" id="email" name="login">
+		 	</li>
+		 	<li>
+		 		<label for="password"> 비밀번호 </label>
+		 		<input type="password" id="password" name="login">
+		 	</li>
+		 	<li>
+		 		<label for="password2"> 비밀번호 확인 </label>
+		 		<input type="password" id="password" name="login">
+		 	</li>
+		 </ul>
+	</fieldset>
+	<fieldset>
+		<legend> 이벤트와 새로운 소식 </legend>
+		<label for="mailing-y"> 메일 수신 </label>
+		<input type="radio" name="mailing" id="mailing-y">
+		<label for="mailing-n"> 메일 수신 안 함 </label>
+		<input type="radio" name="mailing" id="mailing-n" checked>
+	</fieldset>
+</form>
+<input type="submit" id="submit" name="login" value="가입하기">
+<input type="submit" id="cancle" name="login" value="취소"> 
+<br><br><br><br><br><hr>
+
+<form>
+	<field>
+		<legend> 그룹 이름4 </legend>
+		
+		<label>숫자1: </label>
+		<input type="number" name="number" value=0 min="1" max="10"> <br>
+		<label>숫자2: </label>
+		<input type="range" name="range" value="1" min="2" max="5"> <br>
+	</field>
+	<input type="submit" value="전송">
+</form>
+
+
+
+<br><br><br><br><br><hr>
+<!-- 139쪽 스핀 박스를 사용해 숫자 입력하기 (그림 5-14) -->
+<form>
+	<fieldset>
+		<ul>
+			<li>
+				<input type="checkbox" name="gift" id="g3">
+				<label for="g3">선물용 3kg <input type="number" value="1" min="0" max="5">개 (최대 5개)</label> <br>
+			</li>
+			<li>
+				<input type="checkbox" name="gift" id="g5">
+				<label for="g5">선물용 5kg <input type="number" value="1" min="0" max="3">개 (최대 3개)</label>
+			</li>
+		</ul>
+	</fieldset>
+</form>
+
+
+
+<br><br><br><br><br><hr>
+
+<!-- 140쪽 슬라이드 막대를 사용해 숫자 입력하기 (그림 5-15) -->
+<form>
+	<fieldset>
+		<ul>
+			<li>
+				<input type="checkbox" name="gift" id="g3">
+				<label for="g3">선물용 3kg <input type="range" value="1" min="0" max="5">개 (최대 5개)</label> <br>
+			</li>
+			<li>
+				<input type="checkbox" name="gift" id="g5">
+				<label for="g5">선물용 5kg <input type="range" value="1" min="0" max="3">개 (최대 3개)</label>
+			</li>
+		</ul>
+	</fieldset>
+</form>
+
+<!-- 141쪽 3가지 형식의 날짜 입력하기 (그림 5-16) -->
+<form>
+	<fieldset>
+		<legend>날짜 지정하기</legend>
+			<input type="date" name="date">
+			<label>날짜</label> <br>
+			
+			<input type="month"> 
+			<label>날짜(월)</label> <br>
+			
+			<input type="week">
+			<label>날짜(주)</label> <br>
+			
+			<input type="time" name="time">
+			<label>시간</label> <br>
+			
+			<input type="datetime-local" name="datetime-local">
+			<label>날짜시간</label>
+	</fieldset>			
+</form>
+<hr>
+<form>
+	<fieldset>
+		<legend> 이미지 버튼 submit 전송 </legend>
+			<label></label>
+			<input type="submit" value="전송">
+			<br>
+			<label></label>
+			<input type="reset" value="초기화">
+			<br>			
+			<label></label>
+			<input type="button" value="버튼">
+			<br>			
+			<label>이미지</label>
+			<input type="image" src= "1.jpg" width="50" heigth="20" value="이미지 버튼">
+			<br>
+			<label>파일</label>
+			<input type="file" value="파일">
+			<br>
+			<label>웹 주소</label>
+			<input type="url" value="웹 주소 입력" required>
+			<br>
+			<label>검색</label>
+			<input type="search" name="search">
+			<br>
+			<label>이메일</label>
+			<input type="email" name="email">
+			<br>
+			<label>연락처</label>
+			<input type="tel" name="phone">
+	</fieldset>
+</form>
+
+
+<!-- 149쪽 배송정보 (그림 5-26)
+	 이름 : 문서를 열었을 때 커서 깜빡
+	 배송 주소 : 필수 조건
+	 연락처 : 설명글 하이픈 빼고 입력 -->
+<form>
+	<fieldset>
+		<legend> <b>배송 정보</b> </legend>
+			<label for="user-name"> 이름 </label>
+			<input type="text" name="shipping" id="user-name" autofocus>
+			<br>
+			<label for="addr">배송 주소</label>
+			<input type="text" name="shipping" id="addr" required>
+			<br>
+			<label for="email">이메일</label>
+			<input type="email" name="shipping" id="email">
+			<br>
+			<label for="phone">연락처</label>
+			<input type="tel" name="shipping" id="phone" placeholder="하이픈을 빼고 입력해주세요(예 01012345678)">
+			<br>
+			<label for="d-day">배송 지정일</label>
+			<input type="date" name="shipping" id="d-day" min="2022-06-24"> (주문일로부터 최소 3일 이후)
+	</fieldset>
+</form>
+<hr>
+
+<!-- 151쪽 readonly와 required 속성 사용하기 (그림 5-27) -->
+<form>
+	<fieldset>
+		<legend> <b>배송 정보</b> </legend>
+		<ul id="shipping">
+			<li>
+				<label for="prod"> 주문 상품 </label>
+				<input type="text" name="shipping" id="prod" value="상품용 3KG" readonly>
+			</li>
+			<li>
+				<label for="user-name"> 이름 </label>
+				<input type="text" name="shipping" id="user-name" value="고경희" autofocus>
+			</li>
+			<li>
+				<label for="addr">배송 주소</label>
+				<input type="text" name="shipping" id="addr" required>
+			</li>
+			<li>
+				<label for="email">이메일</label>
+				<input type="email" name="shipping" id="email">
+			</li>
+			<li>
+				<label for="phone">연락처</label>
+				<input type="tel" name="shipping" id="phone" placeholder="하이픈을 빼고 입력해주세요(예 01012345678)">
+			</li>
+			<li>
+				<label for="d-day">배송 지정일</label>
+				<input type="date" name="shipping" id="d-day"> <small> (주문일로부터 최소 3일 이후)</small>
+			</li>
+		</ul>	
+	</fieldset>
+	<div>
+		<input type="submit" value="주문하기">
+		<input type="reset" value="취소하기">
+	</div>
+</form>
+
+<!-- 153쪽  회원가입 신청서 작성하기(그림 5-29) -->
+
+<form>
+	<h1>회원 가입을 환영합니다</h1>
+		<fieldset>
+			<legend>사용자 정보</legend>
+			<ul id="sign-up">
+				<li>
+					<label for="">아이디</label>
+					<input type="text" name="sign-up" id="id"  placeholder="4자~10자 사이, 공백없이">
+				</li>
+				<li>
+					<label for="email">이메일</label>	
+					<input type="email" name="sign-up" id="emial" required>
+				</li>
+				<li>
+					<label for="pass">비밀번호</label>
+					<input type="password" name="sign-up" id="pass"  placeholder="문자와 숫자, 특수 기호 포함">
+				</li>
+				<li>
+					<label for="paas-hidden">비밀번호 확인</label>
+					<input type="hidden" name="sign-up" id="hidden">
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>이벤트와 새로운 소식</legend>
+			<input type="radio" id="mailing-y" checked>
+			<label for="mailing-y">메일 수신</label>
+			<input type="radio" id="mailing-n">
+			<label for="mailing-n">메일 수신 안 함</label>
+		</fieldset>
+		<div>
+			<input type="submit" value="가입하기">
+			<input type="reset" value="취소"> <br>
+			
+		</div>
+</form>
+<hr>
+
+
+
+
+
+
+</body>
+</html>

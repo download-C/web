@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css2/test5.html</title>
+<style>
+	/*클래스 contents의 3번째 자식 요소 <h2>객실 소개</h2>*/
+	.contents:nth-child(3) {
+		background-color: #ffff00;
+	}
+	/* 클래스 contents의 p요소 중 세 번째 <p>CCCCCCCCCCCCCCCCCCCCCCC</p>*/
+	.contents p:nth-child(4) {
+		background-color: #00b900;
+	}
+	fieldset { 
+		width: 23 0px;
+		border: 1px solid #ccc;
+		text-align: center; 
+	}
+	table {
+		text-align : center;
+		border: 1px solid #ccc;
+		width: 200px;
+		height: 200px;
+		margin: auto;
+	}
+	table tr:nth-child(2n+1) {
+		background-color: lightgray;
+		color: black;
+	}
+	.container {
+		width: 200px;
+		border: 1px solid #ccc;
+	}
+	.container li {
+		padding: 2px;
+	}
+	li.new::after {
+		content: "NEW!!";
+		font-size: x-small;
+		padding: 2px 4px;
+		margin: 0 10px;
+		border-radius: 2px;
+		background-color: #f00;
+		color: #fff;
+	}
+</style>
+</head>
+<body>
+<div class="contents">
+	<h2>이용 안내</h2>
+	<p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+	<h2>객실 소개</h2>
+	<p>BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</p>
+	<h2>예약 방법 및 요금</h2>
+	<p>CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</p>
+</div>
+
+<div>
+<fieldset>
+	<h1>웹 개발</h1>
+	<table>
+		<tr><td>HTML</td></tr>
+		<tr><td>CSS</td></tr>
+		<tr><td>자바스크립트</td></tr>
+		<tr><td>React</td></tr>
+		<tr><td>node.js</td></tr>
+	</table>
+</fieldset>
+</div>
+<br>
+<div class="container">
+	<h1> 제품 목록</h1>
+	<ul>
+		<li class="new">제품 A</li>
+		<li>제품 B</li>
+		<li>제품 C</li>
+		<li class="new">제품 D</li>
+	</ul>
+</div>
+</body>
+</html>
