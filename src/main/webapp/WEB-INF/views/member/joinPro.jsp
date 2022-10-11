@@ -1,22 +1,22 @@
-<%@page import="com.itwillbs.member.MemberDAO"%>
+<%@page import="com.itwillbs.persistence.MemberDAOImpl"%>
+<%@page import="com.itwillbs.persistence.MemberDAO"%>
 <%@page import="java.sql.Timestamp"%>
-<%@page import="com.itwillbs.member.MemberBean"%>
+<%@page import="com.itwillbs.domain.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-//member/joinPro.jsp
+	//member/joinPro.jsp
 // request 한글처리
 request.setCharacterEncoding("utf-8");
 // MemberBean 객체생성
-MemberBean mb = new MemberBean();
+MemberVO mb = new MemberVO();
 // id pw name email regdate
-mb.setId(request.getParameter("id"));
-mb.setPw(request.getParameter("pw"));
-mb.setName(request.getParameter("name"));
-mb.setEmail(request.getParameter("email"));
-mb.setRegdate(new Timestamp(System.currentTimeMillis()));
+mb.setUserid(request.getParameter("id"));
+mb.setUserpw(request.getParameter("pw"));
+mb.setUsername(request.getParameter("name"));
+mb.setUseremail(request.getParameter("email"));
 // MemberDAO 객체생성
-MemberDAO dao=new MemberDAO();
+MemberDAO dao=new MemberDAOImpl();
 // insertMember(mb) 메서드 호출
 dao.insertMember(mb);
 // login.jsp

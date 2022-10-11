@@ -21,8 +21,10 @@
 		<beans:property name="suffix" value=".jsp" /> <!-- 가상주소 매핑할 기본 파일 확장자 -->
 	</beans:bean>
 	
-	<context:component-scan base-package="com.itwillbs.funweb" />
 	<!-- 서블릿을 사용할 기본 java 패키지 -->
-	
-	
+	<context:component-scan base-package="com.itwillbs.funweb" />
+	<context:component-scan base-package="com.itwillbs.controller" />
+	<context:component-scan base-package="com.itwillbs.service" />
+	<context:component-scan base-package="com.itwillbs.persistence" />
+
 </beans:beans>

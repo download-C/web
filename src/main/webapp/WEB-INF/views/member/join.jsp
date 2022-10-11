@@ -51,9 +51,9 @@
 
 		//아이디 중복체크
 		$('.dup').click(function() {
-			// 			alert("중복");
+// 			alert("중복");
 			$.ajax({
-				url : './MemberIdcheck.me',
+				url : "${pageContext.request.contextPath }/member/idcheck",
 				data : {
 					'id' : $('.id').val()
 				},

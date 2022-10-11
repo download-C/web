@@ -1,4 +1,4 @@
-package com.itwillbs.funweb;
+package com.itwillbs.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,19 +7,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class MemberController {
 	
-//	// http://localhost:8088/funweb/insert
-//	@RequestMapping(value="/insert", method=RequestMethod.GET)
-//	public String insert(){
-//	return "insert";
-//	}
-	
-	
 	// http://localhost:8088/funweb/member/insert
 	@RequestMapping(value="/member/insert", method=RequestMethod.GET)
 	public String insert() {
-		System.out.println("MemberController insert()");
-	// 해당 링크 클릭 시 가상 주소 변경 없이 회원가입(join.jsp)로 이동
+	// 
 		return "member/join";
+		//member/insert를 입력하면 /WEB-INF/views/member/join.jsp 파일로 연결
 	}
 	
 	// http://localhost:8088/funweb/member/insertPro
@@ -37,6 +30,20 @@ public class MemberController {
 		// login 가상주소가 들어올 경우 /member/login.jsp 파일로 이동
 		return "/member/login";
 	}
-
 	
+	// http://localhost:8088/funweb/member/loginPro
+	@RequestMapping(value="/member/loginPro", method=RequestMethod.POST)
+	public String loginPro() {
+		System.out.println("MemberController loginPro()");
+		// loginPro 가상주소가 들어올 경우 /main/main.jsp 파일로 이동
+		return "redirect:/main/main";
+	}
+	
+	// http://localhost:8088/funweb/main/main
+	@RequestMapping(value="/main/main", method=RequestMethod.GET)
+	public String main() {
+		System.out.println("MemberController main()");
+		// loginPro 가상주소가 들어올 경우 /main/main.jsp 파일로 이동
+		return "/main/main";
+	}
 }

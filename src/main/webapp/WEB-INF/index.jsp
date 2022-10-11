@@ -8,7 +8,7 @@
 </head>
 <body>
 <%
-	response.sendRedirect("/member/insert");
+	response.sendRedirect("/main/main");
 %>
 </body>
 </html>
